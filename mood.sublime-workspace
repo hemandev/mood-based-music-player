@@ -1,0 +1,290 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"my",
+				"my_func"
+			],
+			[
+				"my_",
+				"my_decor"
+			],
+			[
+				"wi",
+				"while\tWhile Loop"
+			],
+			[
+				"fa",
+				"faces"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "import numpy as np\nimport cv2\n\n",
+			"file": "feature-extraction/hello.py",
+			"file_size": 74,
+			"file_write_time": 131621524350321431,
+			"settings":
+			{
+				"buffer_size": 31,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 530.0,
+		"last_filter": "python",
+		"selected_items":
+		[
+			[
+				"python",
+				"Build With: Python"
+			],
+			[
+				"color",
+				"Colorsublime: Install Theme"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"pyth",
+				"SublimeREPL: Python - IPython"
+			],
+			[
+				"pyr",
+				"SublimeREPL: Python - virtualenv"
+			],
+			[
+				"re",
+				"SublimeREPL: Python - execnet"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"termina",
+				"Terminal View: Open Bash Terminal"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build With: Python"
+			],
+			[
+				"theme",
+				"UI: Select Color Scheme"
+			]
+		],
+		"width": 745.0
+	},
+	"console":
+	{
+		"height": 204.0,
+		"history":
+		[
+			"exit()",
+			"hg",
+			"import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/hemanditwiz/Desktop/mood-based-music-player"
+	],
+	"file_history":
+	[
+		"/home/hemanditwiz/Desktop/facecv.py",
+		"/home/hemanditwiz/Desktop/hello.py",
+		"/home/hemanditwiz/Desktop/index.html",
+		"/home/hemanditwiz/Desktop/untitled.py",
+		"/home/hemanditwiz/Desktop/opencv/face.xml",
+		"/home/hemanditwiz/Desktop/opencv/eye.xml",
+		"/home/hemanditwiz/Desktop/decor.py",
+		"/home/hemanditwiz/Desktop/decor2.py"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "feature-extraction/hello.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 31,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"show_definitions": false,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 60.0
+	},
+	"input":
+	{
+		"height": 95.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 164.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "mood.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 301.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
