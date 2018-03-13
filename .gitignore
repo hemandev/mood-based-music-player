@@ -1,4 +1,5 @@
 /emotion-recognition/dataset
+/emotion-recognition/shape_predictor_68_face_landmarks.dat
 /projenv
 mood.sublime-project
 mood.sublime-workspace
