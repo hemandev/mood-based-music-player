@@ -25,25 +25,33 @@ def get_landmarks(img):
     ymean =  np.mean(ylist) # take the mean of all y coordinates
     xdist = [(x-xmean) for x in xlist] # calcuate x coordinate w.r.t to the mean position
     ydist = [(y-ymean) for y in ylist] # calcuate x coordinate w.r.t to the mean position
-    
+    #print(xlist[29],ylist[29],xlist[26],ylist[26]) 
     ''' Next is the case where we have to deal whether the face is tilted or not.If the face is titled, the coordinates 
     will not similar to the original ones and again might cause confusion to the classifier.In to fix it, we have to 
     find the tilted angle and add or subtract it accordingly.It is assumed that the bridge of the nose is straight for 
     most of the humans.By this way, we compare the bridge line with the original line and find out the offset angle.'''    
     
     if xlist[26]==xlist[29]: # 26th index corresponds to the coordinates for the tip of the nose and 29th for the top of the bridge.
-        angleoffset=0 # If they both have the same x coordinate, then offset will be zero.
+        angleoffset=0 # If they bo th have the same x coordinate, then offset will be zero.
     else:
-        angleoffset_rad=int(math.atan((ydist[26] - ydist[29]) / (xdist[26] - xdist[29])))
+        xd=xlist[26]-xlist[29]
+        yd=ylist[26]-ylist[29]
+        tan=yd/xd
+     #   print ("tan=",tan)
+        angleoffset_rad=(math.atan(tan))
+    #    print ("rad ",angleoffset_rad)
         angleoffset=int(math.degrees(angleoffset_rad))
-
+    #    print("angle ", angleoffset)
     if angleoffset<0:
         angleoffset+=90
 
-    else:
+    elif angleoffset>0:
         angleoffset-=90
-        
-    cv2.circle(img, (int(xmean), int(ymean)), 1, (255, 0, 0), thickness=2)       
+       
+    print(xdist[26],ydist[26])
+    cv2.circle(img, (int(326), int(250)), 1, (0, 0, 0), thickness=8)
+#    cv2.circle(img, (int(0), int(0)), 1, (255,255,255), thickness=5)
+    cv2.circle(img, (int(xmean), int(ymean)), 1, (255, 255, 255), thickness=2)       
     cv2.circle(img, (int(xlist[26]), int(ylist[26])), 1, (0, 0, 255), thickness=2)   
     cv2.circle(img, (int(xlist[29]), int(ylist[29])), 1, (0, 0, 255), thickness=2)
     print(angleoffset)
@@ -59,18 +67,14 @@ def get_landmarks(img):
         angle_rad = (math.atan((z - ymean) / (w - xmean)))
         angle_degree = math.degrees(angle_rad)
         angle_req = int(angle_degree - angleoffset)
-        landmarks_v.append(angle_req)
+        landmarks.append(angle_req)
 
-    if len(face_detections)<1:
-        landmarks_v="error"
-
-    return  landmarks_v
     
     return landmarks
 
 
 
-img = cv2.imread('hem.png')
+img = cv2.imread('arg.jpg')
 landmarks = get_landmarks(img)
 
     
